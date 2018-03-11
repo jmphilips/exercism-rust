@@ -1,4 +1,8 @@
 pub fn reverse(s: &str) -> String {
-    let split = s.split("").collect();
-
+    let mut ssplit: Vec<&str> = s.split("").collect();
+    ssplit.reverse();
+    let rev: String = ssplit.join("");
+    rev
 }
+
+
